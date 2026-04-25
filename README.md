@@ -2,28 +2,29 @@
 
 A modern, responsive React website for **MARS Mindshift Training Hub**, a professional training and leadership development firm.
 
-**Live tagline:** *Redefining Mindsets. Rebuilding Potential.*
+**Live tagline:** _Redefining Mindsets. Rebuilding Potential._
 
 ---
 
 ## 📋 Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| **React 18** | UI Framework |
-| **Vite** | Build tool (fast dev server + optimized builds) |
-| **Tailwind CSS 3** | Utility-first CSS styling |
-| **Framer Motion** | Smooth animations & transitions |
-| **Swiper.js** | Gallery carousel |
-| **EmailJS** | Contact form email delivery |
-| **React Icons** | Icon library |
-| **React Intersection Observer** | Scroll-triggered animations |
+| Tool                            | Purpose                                         |
+| ------------------------------- | ----------------------------------------------- |
+| **React 18**                    | UI Framework                                    |
+| **Vite**                        | Build tool (fast dev server + optimized builds) |
+| **Tailwind CSS 3**              | Utility-first CSS styling                       |
+| **Framer Motion**               | Smooth animations & transitions                 |
+| **Swiper.js**                   | Gallery carousel                                |
+| **EmailJS**                     | Contact form email delivery                     |
+| **React Icons**                 | Icon library                                    |
+| **React Intersection Observer** | Scroll-triggered animations                     |
 
 ---
 
 ## 🖥️ How to Run Locally (VS Code)
 
 ### Prerequisites
+
 - **Node.js** v18+ installed → [Download here](https://nodejs.org/)
 - **VS Code** → [Download here](https://code.visualstudio.com/)
 
@@ -154,6 +155,7 @@ The build output goes to the `dist/` folder — this is what you deploy.
 This is the best approach for having `marsmindshift.com` as your website address.
 
 #### Step 1: Buy Your Domain
+
 - **Recommended registrars:**
   - [Namecheap](https://www.namecheap.com/) (~₹800/year for .com)
   - [GoDaddy](https://www.godaddy.com/) (~₹999/year)
@@ -163,6 +165,7 @@ This is the best approach for having `marsmindshift.com` as your website address
 - Purchase the domain
 
 #### Step 2: Get Web Hosting
+
 - **Recommended hosts (with free SSL):**
   - **Hostinger** — ₹149/mo (best budget, includes free domain)
   - **Bluehost** — ₹199/mo
@@ -173,6 +176,7 @@ This is the best approach for having `marsmindshift.com` as your website address
 #### Step 3: Deploy
 
 **For shared hosting (Hostinger, Bluehost):**
+
 ```bash
 # 1. Build your project
 npm run build
@@ -186,6 +190,7 @@ npm run build
 ```
 
 **For VPS/Cloud (DigitalOcean, AWS):**
+
 ```bash
 # 1. SSH into your server
 ssh root@your-server-ip
@@ -201,6 +206,7 @@ sudo nano /etc/nginx/sites-available/marsmindshift.com
 ```
 
 Nginx config:
+
 ```nginx
 server {
     listen 80;
@@ -274,25 +280,28 @@ git push -u origin main
 
 After you have hosting set up, configure DNS at your domain registrar:
 
-| Type  | Name | Value                        | TTL  |
-|-------|------|------------------------------|------|
-| A     | @    | Your server IP / hosting IP  | 3600 |
-| CNAME | www  | marsmindshift.com            | 3600 |
+| Type  | Name | Value                       | TTL  |
+| ----- | ---- | --------------------------- | ---- |
+| A     | @    | Your server IP / hosting IP | 3600 |
+| CNAME | www  | marsmindshift.com           | 3600 |
 
 ---
 
 ## 🎨 Customization Guide
 
 ### Adding Training Photos to Gallery
+
 1. Add photos to `public/` folder
 2. In `src/components/Gallery.jsx`, update the `galleryItems` array
 3. Replace emoji placeholders with actual `<img>` tags
 
 ### Changing Colors
+
 - Edit `tailwind.config.js` → `theme.extend.colors`
 - Edit `src/styles/global.css` → CSS variables at the top
 
 ### Adding Testimonials (Future Enhancement)
+
 - Create `src/components/Testimonials.jsx`
 - Import and add to `App.jsx` between Gallery and Contact
 
@@ -308,4 +317,4 @@ analytics, and growth strategies.
 ## 📄 License
 
 This website is built for MARS Mindshift Training Hub.
-All branding, content, and logos are property of MARS.
+All branding, content, and logos are property of MARS

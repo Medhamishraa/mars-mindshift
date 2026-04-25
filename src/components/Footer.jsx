@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img src="/logo-icon.png" alt="MARS" className="w-10 h-10" />
               <div>
-                <span className="text-xl font-display font-bold text-white">MARS.</span>
+                <span className="text-xl font-display font-bold text-white">MARS</span>
                 <p className="text-xs text-slate-400 font-heading -mt-0.5">Mindshift Training Hub</p>
               </div>
             </div>

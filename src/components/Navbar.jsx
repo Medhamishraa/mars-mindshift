@@ -63,7 +63,7 @@ const Navbar = () => {
             />
             <div className="hidden sm:block">
               <span className={`text-xl font-display font-bold tracking-tight ${scrolled ? 'text-navy' : 'text-white'}`}>
-                MARS.
+                MARS
               </span>
             </div>
           </a>
