@@ -70,10 +70,10 @@ const Contact = () => {
       // 3. Create an Email Template
       // 4. Get your Public Key from Account > API Keys
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID',     // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID',    // Replace with your EmailJS Template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        'YOUR_PUBLIC_KEY'      // Replace with your EmailJS Public Key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
 
       setToast({ type: 'success', message: 'Message sent successfully! We\'ll get back to you soon.' })
