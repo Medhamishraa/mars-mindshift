@@ -106,7 +106,7 @@ const Footer = () => {
             </h4>
             <div className="space-y-3 text-sm text-slate-400 font-body">
               <p>+91 98114 57457</p>
-              <p>marsmindshift@gmail.com</p>
+              <p>connect@marsmindshift.com</p>
               <p>Ghaziabad, Uttar Pradesh</p>
             </div>
           </div>
@@ -117,9 +117,9 @@ const Footer = () => {
           <p className="text-xs text-slate-500 font-body">
             © {currentYear} MARS Mindshift Training Hub. All rights reserved.
           </p>
-          <p className="text-xs text-slate-500 font-body">
+          {/* <p className="text-xs text-slate-500 font-body">
             Designed with ❤️ for transforming potential
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
